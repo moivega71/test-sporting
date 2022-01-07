@@ -1,0 +1,291 @@
+{
+  "store.product": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#product-main",
+      "flex-layout.row#description",
+      "shelf.relatedProducts"
+    ]
+  },
+  "flex-layout.row#specifications-title": {
+    "children": [
+      "rich-text#specifications"
+    ]
+  },
+  "rich-text#specifications": {
+    "props": {
+      "text": "##### Product Specifications"
+    }
+  },
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "marginTop": 4
+    },
+    "children": ["breadcrumb"]
+  },
+  "flex-layout.row#description": {
+    "props": {
+      "marginBottom": 7
+    },
+    "children": ["product-description"]
+  },
+  "flex-layout.row#product-main": {
+    "props": {
+      "colGap": 7,
+      "rowGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7
+    },
+    "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
+  },
+
+  "stack-layout": {
+    "props": {
+      "blockClass": "product"
+    },
+    "children": [
+      "flex-layout.row#product-image",
+      "product-bookmark",
+      "product-specification-badges"
+    ]
+  },
+
+  "product-specification-badges": {
+    "props": {
+      "specificationGroupName": "Group",
+      "specificationName": "On Sale",
+      "visibleWhen": "True",
+      "displayValue": "SPECIFICATION_NAME"
+    }
+  },
+
+  "flex-layout.col#stack": {
+    "children": ["stack-layout"],
+    "props": {
+      "width": "60%",
+      "rowGap": 0
+    }
+  },
+  "flex-layout.row#product-image": {
+    "children": ["product-images"]
+  },
+  "product-images": {
+    "props": {
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "16:9"
+      },
+      "displayThumbnailsArrows": true
+    }
+  },
+  "flex-layout.col#right-col": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    },
+    "children": [
+      "flex-layout.row#product-name",
+      "product-rating-summary",
+      "flex-layout.row#list-price-savings",
+      "flex-layout.row#selling-price",
+      "product-installments",
+      "product-separator",
+      "product-identifier.product",
+      "sku-selector",
+      "product-quantity",
+      "product-assembly-options",
+      "product-gifts",
+      "flex-layout.col#promotion-bank",
+      "flex-layout.row#buy-button",
+      "availability-subscriber",
+      "shipping-simulator",
+      "share#default"
+    ]
+  },
+
+  "flex-layout.row#product-name": {
+    "props": {
+      "marginBottom": 3
+    },
+    "children": ["vtex.store-components:product-name"]
+  },
+
+  "sku-selector": {
+    "props": {
+      "variationsSpacing": 3,
+      "showValueNameForImageVariation": true
+    }
+  },
+
+  "wishlist-button#product-page": {
+    "props": {
+      "AddListenBtn": "add-to-list-btn"
+    }
+  },
+
+  "flex-layout.row#buy-button": {
+    "props": {
+      "marginTop": 4,
+      "marginBottom": 7
+    },
+    "children": ["add-to-cart-button"]
+  },
+
+  "share#default": {
+    "props": {
+      "social": {
+        "Facebook": true,
+        "WhatsApp": true,
+        "Twitter": false,
+        "Pinterest": true
+      }
+    }
+  },
+  /***************************************FRAVEGA********************************************************************/
+
+  "flex-layout.col#promotion-bank":{
+    "props":{
+      "blockClass":"promotion-bank-main"
+    },
+    "children":[
+      "rich-text#promotion-bank-tile",
+      "flex-layout.row#promotion-bank-installments",
+      "flex-layout.row#promotion-bank-installments",
+      "flex-layout.row#promotion-bank-installments",
+      "modal-trigger#example"
+    ]
+  },
+  "rich-text#promotion-bank-tile": {
+    "props": {
+      "text": "¡Aprovechá nuestras promociones bancarias!",
+      "blockClass": "promotion-bank-tile"
+    }
+  },
+
+  "flex-layout.row#promotion-bank-installments":{
+    "props":{
+      "blockClass":"promotion-bank-installments"
+    },
+    "children":[
+      "image#example",
+      "product-installments"
+    ]
+  },
+  "image#example": {
+    "props": {
+      "src": "assets/ahora-24.jpg",
+      "maxHeight": 24
+    }
+  },
+  "modal-trigger#example": {
+    "children": [
+      "rich-text#example",
+      "modal-layout#example"
+    ]
+  },
+  "rich-text#example": {
+    "props": {
+      "text": "Ver cuotas y todos los medios de pago"
+    }
+  },
+  "modal-layout#example": {
+    "props":{
+      "showCloseButton": true,
+      "iconCloseSize": 32,
+      "blockClass":"example-1"
+    },
+    "children": [
+      "modal-header#example",
+      "tab-layout#modal-promition-bank"
+    ]
+  },
+  "modal-header#example":{
+    "props":{
+      "showCloseButton": true,
+      "iconCloseSize": 32
+    },
+    "children": [
+      "rich-text#modal-content"
+    ]
+  },
+  "rich-text#modal-content": {
+    "props": {
+      "text": "Medios de pago y cuotas"
+    }
+  },
+  "tab-layout#modal-promition-bank": {
+    "children": [
+      "tab-list#credit-cards-bank-list",
+      "tab-content#credit-cards-bank-content"
+    ]
+  },
+  "tab-list#credit-cards-bank-list":{
+    "props":{},
+    "children": [
+      "tab-list.item#card1",
+      "tab-list.item#card2"
+      ]
+  },
+  "tab-list.item#card1": {
+    "props": {
+      "tabId": "MASTER",
+      "label": "MASTER",
+      "defaultActiveTab": true,
+      "blockClass": "list-card1"
+    }
+  },
+  "tab-list.item#card2": {
+    "props": {
+      "tabId": "VISA",
+      "label": "VISA",
+      "blockClass": "list-card2"
+    }
+  },
+  "tab-content#credit-cards-bank-content": {
+    "children": [
+      "tab-content.item#card-content-1",
+      "tab-content.item#card-content-2"
+      ]
+  },
+  "tab-content.item#card-content-1": {
+    "children": [
+      "flex-layout.col#item-card-content-1"
+    ],
+    "props": {
+      "tabId": "MASTER"
+    }
+  },
+  "flex-layout.col#item-card-content-1":{
+    "props":{
+      "blockClass": "item-card-content-1"
+    },
+    "children":[
+      "product-installments",
+      "product-installments"
+    ]
+  },
+  "tab-content.item#card-content-2": {
+    "children": [
+      "product-installments"
+    ],
+    "props": {
+      "tabId": "VISA"
+    }
+  }
+  // "rich-text#1": {
+  //   "props": {
+  //     "text": "Texto para Major Appliances",
+  //     "textPosition": "CENTER",
+  //     "font": "t-heading-3"
+  //   }
+  // },
+  // "rich-text#2": {
+  //   "props": {
+  //     "text": "Texto para Electronics",
+  //     "textPosition": "CENTER",
+  //     "font": "t-heading-3"
+  //   }
+  // }
+}

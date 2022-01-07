@@ -1,0 +1,104 @@
+{
+    "store.custom#pdp-template": {
+      "blocks": [
+        "flex-layout.row#pdp-row-container-main"
+      ]
+    },
+  
+    "flex-layout.row#pdp-row-container-main": {
+      "props":{
+          "blockClass": "pdp-row-container-main"
+      },
+    "children": [ 
+      "flex-layout.col#pdp-tag-right",
+      "flex-layout.col#pdp-tag-left"
+      ]
+    },
+  
+    /***************************************PDP TAGS LEFT***********************************************/
+    
+    "flex-layout.col#pdp-tag-left":{
+      "children":[
+        "image#img-pdp-left",
+        "flex-layout.col#pdp-list-left"
+      ],
+      "props":{
+        "blockClass":"pdp-tag-left"
+      }
+    },
+    "image#img-pdp-left":{
+      "props": {
+        "blockClass": "img-pdp",
+        "src": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png"
+      }
+    },
+    "flex-layout.col#pdp-list-left":{
+      "children":[
+        "list-context.product-list#pdp-list-left"
+      ],
+      "props":{
+        "blockClass":"pdp-list-left"
+      }
+    },
+    
+    "product-summary-image#image-pdp-hot-pots-left": {
+      "props": {
+        "blockClass":"image-pdp-hot-pots-left",
+        "showBadge": true
+      }
+    },
+    
+    "product-summary.shelf#pdp-hot-pots-left": {
+      "props":{
+        "blockClass":"pdp-hot-pots-left"
+      },
+      "children": [
+        // "stack-layout#prodsum",
+        "product-summary-image#image-pdp-hot-pots-left",
+        "product-summary-name",
+        "product-summary-price"
+      ]
+    },
+    "list-context.product-list#pdp-list-left": {
+      "blocks": ["product-summary.shelf#pdp-hot-pots-left"],
+      "children": ["slider-layout#pdp-tags-slider-left"],
+      "props":{
+        "blockClass":"pdp-list-left",
+        "maxItems": 4,
+        "collection": "Correo",
+        "hideUnavailableItems": false
+        // "category": "9096"
+      }
+      },
+  "slider-layout#pdp-tags-slider-left": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 4,
+        "phone": 4
+      },
+      "infinite": false,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel-tags-left"
+    }
+  },
+  
+   /***************************************PDP TAGS RIGHT***********************************************/
+    
+   "flex-layout.col#pdp-tag-right":{
+    "children":[
+      "image#img-pdp-right"
+      // "flex-layout.col#pdp-list-right"
+    ],
+    "props":{
+      "blockClass":"pdp-tag-right"
+    }
+  },
+  "image#img-pdp-right":{
+    "props": {
+      "blockClass": "img-pdp",
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png"
+    }
+  }
+  }
+  

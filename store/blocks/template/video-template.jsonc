@@ -1,0 +1,21 @@
+{
+  "store.custom#video-template": {
+    "children": [ "flex-layout.row#layout-video"]
+  },
+  "flex-layout.row#layout-video":{
+      "children":[
+        "video#background"
+      ]
+  },
+  "video#background": {
+    "props": {
+      "width": "100%",
+      "height": "600px",
+      "loop": false,
+      "autoPlay": true,
+      "muted": false,
+      "src": "https://www.youtube.com/embed/Y7ix6RITXM0",
+      "blockClass": "videoEl"
+    }
+  }
+}

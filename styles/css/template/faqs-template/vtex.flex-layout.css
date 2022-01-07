@@ -1,0 +1,50 @@
+.flexRowContent--left-list :global(.vtex-tab-layout-0-x-listContainer--faq-tab-list){
+    display: block;
+}
+
+.flexRowContent--faq-container-tab{
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) 4fr;
+}
+
+.flexRowContent--faq-container-tab :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+    width: 90%;
+}
+
+.flexRowContent--left-list{
+    /* border: 1px solid; */
+    width: 260px;
+}
+
+.flexCol--faq-tabs-list-content :global(.vtex-tab-layout-0-x-listItem),
+.flexCol--faq-tabs-list-content :global(.vtex-tab-layout-0-x-listItemActive) {
+    margin: 0;
+    padding: 0;
+}
+
+.flexCol--faq-tabs-list-content :global(.vtex-tab-layout-0-x-listItemActive) {
+    background: #E8E8E8;
+    padding: 0;
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 0;
+}
+
+.flexColChild--faq-tabs-list-content :global(.vtex-button){
+    padding: 12px;
+    width: 100%;
+    border-radius: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flexColChild--faq-tabs-list-content :global(.vtex-button__label){
+    padding: 0;
+    font-size: 14px;
+}
+
+
+
+
+
+
+

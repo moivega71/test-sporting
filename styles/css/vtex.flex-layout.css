@@ -1,0 +1,155 @@
+.flexRowContent--menu-link,
+.flexRowContent--main-header {
+  padding: 0 0.5rem;
+}
+
+@media screen and (min-width: 40em) {
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
+    padding: 0 1rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
+    padding: 0 0.25rem;
+  }
+}
+
+.flexRowContent--menu-link {
+  background-color: #03044e;
+  color: #fff;
+}
+
+.flexRowContent--main-header {
+  background-color: #f0f0f0;
+}
+
+.flexRowContent--main-header-mobile {
+  align-items: center;
+  padding: 0.625rem 0.5rem;
+  background-color: #f0f0f0;
+}
+
+.flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
+  color: #727273;
+  font-size: 14px;
+}
+.flexRow--deals {
+  background-color: #a7afbd;
+  padding: 14px 0px;
+}
+
+.flexRow--deals .stretchChildrenWidth {
+  align-items: center;
+}
+
+.flexRow--deals .flexCol {
+  align-items: center;
+}
+
+.flexCol--filterCol {
+  max-width: 500px;
+  min-width: 230px;
+}
+
+.flexCol--productCountCol {
+  align-items: flex-start;
+}
+
+.flexCol--orderByCol {
+  align-items: flex-end;
+}
+
+.flexCol--orderByMobileCol {
+  width: 42%;
+}
+
+.flexCol--filterMobileCol {
+  width: 38%;
+}
+
+.flexRow--quickviewMainRow {
+  display: flex;
+  max-height: 100%;
+}
+
+.flexColChild--quickviewDetails:first-child {
+  overflow-y: auto;
+  height: 66% !important;
+  overflow-x: hidden;
+}
+
+.flexColChild--quickviewDetails:last-child {
+  height: 34% !important;
+}
+
+.flexRow--addToCartRow {
+  padding-bottom: 1rem;
+}
+
+/* @media screen and (min-width: 1120px) {
+  .flexCol--cards-sustainability-wrapper {
+    width: 80%;
+    margin: auto;
+    padding-top: 20px
+  }
+}
+
+.flexColChild--sustainability-wrapper{
+  margin: auto
+} */
+
+.flexCol--promotion-bank-main::before {
+  content: "";
+  position: absolute;
+  border-top-right-radius: 2px;
+  transform: rotate(-45deg);
+  display: block;
+  background-color: rgb(218, 218, 218);
+  width: 13px;
+  height: 13px;
+  top: 568px;
+  right: 450px;
+  z-index: 0;
+}
+
+.flexCol--promotion-bank-main {
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 21px;
+  border: 1px solid rgb(218, 218, 218);
+  /* width: 490px; */
+}
+
+.flexColChild--promotion-bank-main :global(.vtex-rich-text-0-x-container--promotion-bank-tile) {
+  background: rgb(244, 244, 244);
+  position: relative;
+  border-bottom: 1px solid rgb(218, 218, 218);
+  z-index: 2;
+  padding-left: 12px;
+}
+
+.flexRow--promotion-bank-installments {
+  height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+padding: 15px 21px;
+}
+
+.flexRowContent--promotion-bank-installments :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+  width: auto !important;
+}
+
+.flexColChild--item-card-content-1{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}

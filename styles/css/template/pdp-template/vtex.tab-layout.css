@@ -1,0 +1,30 @@
+.listItem--list-card1 :global(.vtex-button){
+    background-color: transparent;
+    color: transparent;
+    border-color: transparent;
+}
+
+.listItem--list-card1 :global(.vtex-button__label){
+    font-size: 0;
+    content: url(assets/mastercard.jpg);
+    width: 100px;
+}
+
+.listItem--list-card2 :global(.vtex-button){
+    background-color: transparent;
+    color: transparent;
+    border-color: transparent;
+}
+
+.listItem--list-card2 :global(.vtex-button__label){
+    font-size: 0;
+    content: url(assets/visa.jpg);
+    width: 100px;
+}
+
+.flexColChild--item-card-content-1{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,351 @@
+{
+    "store.custom#faqs-workspaces": {
+        "children": [
+            "flex-layout.row#conatine-tab-faqs-mvega"
+          ]
+        },
+        "flex-layout.row#conatine-tab-faqs-mvega":{
+            "props":{
+                "blockClass": "tab-container-faq"
+            },
+          "children":[
+            "tab-layout"
+          ]
+        },
+        "tab-layout": {
+            "props":{
+                "blockClass": "tab-faq"
+            },
+            "children": [
+                "flex-layout.row#container-tab"
+            ]
+          },
+          "flex-layout.row#container-tab":{
+            "props":{
+              "blockClass": "faq-container-tab"
+          },
+            "children": [
+                "flex-layout.row#left-list",
+                "flex-layout.row#right-content"
+            ]
+          },
+        "flex-layout.row#left-list":{
+            "props":{
+                "blockClass": "left-list"
+            },
+          "children": [
+            "tab-list"
+          ]
+        },
+        
+        "tab-list": {
+          "props":{
+            "blockClass":"faq-tab-list"
+          },
+          "children": [
+            "rich-text#title-left-list",
+            "flex-layout.row#container-tabs-list"
+            ]
+        },
+        "rich-text#title-left-list":{
+          "props":{
+            "text": "ATC"
+          }
+        },
+        "flex-layout.row#container-tabs-list":{
+          "props":{
+            "blockClass":"faq-container-tabs-list"
+          },
+            "children": [
+                "flex-layout.col#tabs-list-content"
+                ]
+        },
+        "flex-layout.col#tabs-list-content":{
+          "props":{
+            "blockClass":"faq-tabs-list-content"
+          },
+            "children": [
+                "tab-list.item#1",
+                "tab-list.item#2",
+                "tab-list.item#3",
+                "tab-list.item#4"
+                ]
+        },
+        "tab-list.item#1": {
+          "props": {
+            "tabId": "preguntasfrecuentes",
+            "label": "Preguntas más frecuentes",
+            "defaultActiveTab": true
+          }
+        },
+        "tab-list.item#2": {
+          "props": {
+            "tabId": "pedidos",
+            "label": "Pedidos"
+          }
+        },
+        "tab-list.item#3": {
+          "props": {
+            "tabId": "envios",
+            "label": "Envíos"
+          }
+        },
+        "tab-list.item#4": {
+          "props": {
+            "tabId": "devolucionesreembolsos",
+            "label": "Devoluciones y Reembolsos"
+          }
+        },
+        "flex-layout.row#right-content":{
+          "children": [
+            "tab-content"
+          ]
+        },
+        "rich-text#title-right-content":{
+          "props":{
+            "text": "¡Hola! ¿En que puedo ayudarte?"
+          }
+        },
+        "tab-content": {
+          "children": [
+            "rich-text#title-right-content",
+            "tab-content.item#1",
+            "tab-content.item#2"
+            ]
+        },
+        "tab-content.item#1": {
+          "children": [
+            "rich-text#subtitle-right-content",
+            "disclosure-layout-group#group-faq-tab1"
+          ],
+          "props": {
+            "tabId": "preguntasfrecuentes"
+          }
+        },
+        "tab-content.item#2": {
+          "children": [
+            "rich-text#subtitle-right-content",
+            "disclosure-layout-group#group-faq-tab1"
+          ],
+          "props": {
+            "tabId": "pedidos"
+          }
+        },
+        "rich-text#subtitle-right-content":{
+          "props":{
+            "text": "Preguntas mas frecuente"
+          }
+        },
+        "disclosure-layout-group#group-faq-tab1": {
+            "children": [
+              "disclosure-layout#first-faq",
+              "disclosure-layout#second-faq",
+              "disclosure-layout#third-faq",
+              "disclosure-layout#fourth-faq",
+              "disclosure-layout#fifth-faq",
+              "disclosure-layout#sixth-faq"
+            ]
+        },"disclosure-layout#first-faq": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#first-faq", "disclosure-content#first-faq"]
+  },
+  "disclosure-trigger#first-faq": {
+    "props": {
+      "blockClass": "question-faqs",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question1-faq"]
+  },
+  "disclosure-content#first-faq": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer1-faq"]
+  },
+  "rich-text#question1-faq": {
+    "props": {
+      "text": "¿CÓMO SE UTILIZA EL CÓDIGO PROMOCIONAL?"
+    }
+  },
+  "rich-text#answer1-faq": {
+    "props": {
+      "text": "Para utilizar un código promocional, tan solo debe introducir el código promocional en el espacio específico para el código promocional en el carrito. Una vez validado, la oferta se aplicará automáticamente al pedido. En el caso de que el código promocional no funcionara, póngase en contacto con nuestro servicio al cliente a través del chat o mail de lamartina@brandlive.net"
+    }
+  },
+
+  "disclosure-layout#second-faq": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#second-faq",
+      "disclosure-content#second-faq"
+    ]
+  },
+  "disclosure-trigger#second-faq": {
+    "props": {
+      "blockClass": "question-faqs",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question2-faq"]
+  },
+  "disclosure-content#second-faq": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer2-faq"]
+  },
+  "rich-text#question2-faq": {
+    "props": {
+      "text": "SUSCRIBITE A NUESTRO NEWSLETTER"
+    }
+  },
+  "rich-text#answer2-faq": {
+    "props": {
+      "text": "Para suscribirse al newsletter, especifique su dirección de correo electrónico en el campo en la parte inferior central de la página de inicio del sitio en la sección suscribite a nuestro newsletter, y rellene los campos de tratamiento, nombre, apellido y correo electrónico en la ventana de suscripción. Para cancelar la suscripción a la newsletter, haga clic en el enlace de cancelación de la suscripción de la parte inferior de la newsletter La Martina."
+    }
+  },
+
+  "disclosure-layout#third-faq": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#third-faq", "disclosure-content#third-faq"]
+  },
+  "disclosure-trigger#third-faq": {
+    "props": {
+      "blockClass": "question-faqs",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question3-faq"]
+  },
+  "disclosure-content#third-faq": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer3-faq"]
+  },
+  "rich-text#question3-faq": {
+    "props": {
+      "text": "ZONAS DE ENTREGA DE LA MARTINA"
+    }
+  },
+  "rich-text#answer3-faq": {
+    "props": {
+      "text": "La zona de entrega del shop online es la República Argentina. Por el momento no estamos realizando envíos a los siguientes codigos postales: 3340 (Santo Tomé), 3346 (La Cruz), 3342 (Virasoro), 3302 (Ituzaingó), 3358 (Col. Liebig), 3480 (Ita Ibate), 3407 (Gral Paz), 3344 (Alvear), 3232 (Yapeyu), 3306 (San Carlos). Plazos y modalidades de entrega: El tiempo estimado de entrega varía segun el metodo de envío selecionado y la localidad del envío. Las entregas se realizan por OCASA de lunes a viernes, entre las 9:00 y las 20:00 horas, con excepción de los feriados. Contamos con 3 opciones de envio:En CABA: Si compraste antes de las 12:00, lo recibís el mismo día (entrega hasta las 20:00) sino al día siguiente. En GBA: Demora de hasta 2 dias hábiles en GBA. Envio a domicilio estandar demora de hasta 5 dias hábiles en CABA y GBA y hasta 10 días hábiles en el interior del país.A partir del momento en que el servicio de correos OCASA se hace cargo del paquete, puede conocer en todo momento su evolución gracias al n° de seguimiento del pedido, enviado por correo electrónico con la confirmación del pedido. En caso de encontrarse ausente, el servicio de correos le dejará un aviso de entrega para que vaya a buscar el paquete a la oficina de correos más próxima."
+    }
+  },
+
+  "disclosure-layout#fourth-faq": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#fourth-faq",
+      "disclosure-content#fourth-faq"
+    ]
+  },
+  "disclosure-trigger#fourth-faq": {
+    "props": {
+      "blockClass": "question-faqs",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question4-faq"]
+  },
+  "disclosure-content#fourth-faq": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer4-faq"]
+  },
+  "rich-text#question4-faq": {
+    "props": {
+      "text": "CONSULTAS GENERALES"
+    }
+  },
+  "rich-text#answer4-faq": {
+    "props": {
+      "text": "Precio de los artículos: Los precios aplicados en el shop online son idénticos a los de nuestros puntos de venta. No se aplica ningún aumento. Sin embargo, los gastos de transporte pueden correr a cargo de los clientes (salvo en el periodo de entrega gratuita). Reservar un producto: no se puede reservar ningún artículo en nuestra tienda en línea. ¿Por qué no esta el producto en shop online?: Al final de la temporada, es posible que algunos artículos no aparezcan en nuestro shop online. El servicio de mantenimiento retira los productos que no están disponibles y cuyas existencias no se renovarán hasta que termine la temporada."
+    }
+  },
+
+  "disclosure-layout#fifth-faq": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#fifth-faq", "disclosure-content#fifth-faq"]
+  },
+  "disclosure-trigger#fifth-faq": {
+    "props": {
+      "blockClass": "question-faqs",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question5-faq"]
+  },
+  "disclosure-content#fifth-faq": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer5-faq"]
+  },
+  "rich-text#question5-faq": {
+    "props": {
+      "text": "FORMAS DE PAGO"
+    }
+  },
+  "rich-text#answer5-faq": {
+    "props": {
+      "text": "El pago del pedido en el shop online se efectúa mediante tarjeta de crédito o débito. lamartina.com.ar posee un sistema de cobranza a través de tarjeta de crédito y débito que es 100% seguro. Los números son encriptados y no sufren ningún tipo de amenaza en nuestro banco de datos, siendo enviados directamente a la administradora de la tarjeta de crédito."
+    }
+  },
+
+  "disclosure-layout#sixth-faq": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#sixth-faq", "disclosure-content#sixth-faq"]
+  },
+  "disclosure-trigger#sixth-faq": {
+    "props": {
+      "blockClass": "question-faqs",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question6-faq"]
+  },
+  "disclosure-content#sixth-faq": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer6-faq"]
+  },
+  "rich-text#question6-faq": {
+    "props": {
+      "text": "TALLES DE LOS PRODUCTOS"
+    }
+  },
+  "rich-text#answer6-faq": {
+    "props": {
+      "text": "Para conocer la correspondencia de tallas La Martina, le recomendamos consultar la guía de tallas disponible en cada una de las fichas de producto."
+    }
+  },
+
+  "disclosure-state-indicator": {
+    "props": {     
+      "Show": "icon-plus#line",
+      "Hide": "icon-minus#line"
+    }
+  },
+  "icon-minus#line": {
+    "props": {
+      "orientation": "line"
+    }
+  },
+
+  "icon-plus#line": {
+    "props": {
+      "orientation": "line"
+    }
+  }
+}
